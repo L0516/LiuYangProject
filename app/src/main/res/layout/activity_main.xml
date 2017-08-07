@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.baway.liuyang.MainActivity">
 
-    <TextView
+    <com.baway.liuyang.TopBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/topbar"
+        app:leftBackground="#3EBEF5"
+        app:leftText="返回"
+        app:leftTextColor="#ffffff"
+        app:titleText="自定义标题"
+        app:titleTextColor="#000"
+        app:titleTextSize="10sp"
+        app:titleBackground="#F59563"
+        app:rightBackground="#3EBEF5"
+        app:rightText="更多"
+        app:rightTextColor="#ffffff"/>
 
 </android.support.constraint.ConstraintLayout>
